@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Nunito', sans-serif;
+
+  --color-sky-50: #E0F7FF;
+  --color-sky-100: #B3EEFF;
+  --color-sky-200: #80E2FF;
+  --color-sky-300: #4DD6FF;
+  --color-sky-400: #00BFFF;
+  --color-sky-500: #00BFFF;
+  --color-sky-600: #0099CC;
+  --color-sky-700: #007AA3;
+  --color-sky-800: #005C7A;
+  --color-sky-900: #003D52;
+
+  --border-radius-2xl: 1rem;
+  --border-radius-3xl: 1.5rem;
+  --border-radius-4xl: 2rem;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00BFFF 0%, #0099CC 100%);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.2s;
+  box-shadow: 0 4px 15px rgba(0,191,255,0.3);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #00ADEE 0%, #007AA3 100%);
+  box-shadow: 0 6px 20px rgba(0,191,255,0.4);
+  transform: translateY(-1px);
+}
+.btn-primary:active { transform: translateY(0); }
+
+.btn-secondary {
+  background: white;
+  color: #0099CC;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  border: 2px solid #00BFFF;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+}
+.btn-secondary:hover { background: #E0F7FF; }
+
+.btn-ghost {
+  color: #334155;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.btn-ghost:hover { background: #f1f5f9; }
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border: 1px solid #f1f5f9;
+  padding: 1.5rem;
+}
+
+.card-hover {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border: 1px solid #f1f5f9;
+  padding: 1.5rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+.card-hover:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 2px solid #e2e8f0;
+  transition: border-color 0.2s;
+  font-weight: 500;
+  font-size: 0.9rem;
+  outline: none;
+  background: white;
+}
+.input-field:focus { border-color: #00BFFF; }
+.input-field::placeholder { color: #94a3b8; font-weight: 400; }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1.2;
+  font-family: var(--font-display);
+}
+@media (min-width: 768px) { .section-title { font-size: 2.5rem; } }
+
+.sky-gradient {
+  background: linear-gradient(135deg, #00BFFF 0%, #0099CC 100%);
+}
+
+.sky-mesh {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(0,191,255,0.1) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(0,153,204,0.07) 0%, transparent 60%),
+    #ffffff;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up { animation: fadeInUp 0.5s ease-out forwards; }
+.animate-stagger > * { opacity: 0; animation: fadeInUp 0.5s ease-out forwards; }
+.animate-stagger > *:nth-child(1) { animation-delay: 0.1s; }
+.animate-stagger > *:nth-child(2) { animation-delay: 0.2s; }
+.animate-stagger > *:nth-child(3) { animation-delay: 0.3s; }
+.animate-stagger > *:nth-child(4) { animation-delay: 0.4s; }
+.animate-stagger > *:nth-child(5) { animation-delay: 0.5s; }
+.animate-stagger > *:nth-child(6) { animation-delay: 0.6s; }
