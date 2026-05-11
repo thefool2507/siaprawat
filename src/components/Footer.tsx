@@ -21,7 +21,7 @@ export default function Footer() {
               Layanan perawatan profesional terpadu untuk lansia dan penyandang difabel. Perawat terlatih, bersertifikat, dan penuh dedikasi.
             </p>
             <div className="flex items-center gap-3">
-              <a href="https://instagram.com/siaprawat" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 hover:bg-sky-500 rounded-lg flex items-center justify-center transition-colors duration-200">
+              <a href="https://instagram.com/siaprawatcenter" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 hover:bg-sky-500 rounded-lg flex items-center justify-center transition-colors duration-200">
                 <span className="text-xs font-bold">IG</span>
               </a>
               <a href="mailto:siaprawatindonesia@gmail.com" className="w-9 h-9 bg-white/10 hover:bg-sky-500 rounded-lg flex items-center justify-center transition-colors duration-200">
@@ -66,7 +66,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-gray-400">
                 <Phone size={15} className="text-sky-400 mt-0.5 shrink-0" />
-                <span>+62 812-3456-7890</span>
+                <span>+62 895-2012-4809</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-gray-400">
                 <Mail size={15} className="text-sky-400 mt-0.5 shrink-0" />
@@ -78,7 +78,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-sm text-gray-400">
                 📷
-                <span>@siaprawat</span>
+                <span>@siaprawatcenter</span>
               </li>
             </ul>
           </div>

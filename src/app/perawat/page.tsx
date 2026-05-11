@@ -55,7 +55,7 @@ export default function PerawatPage() {
   // Demo caregivers if DB is empty
   const demoCaregivers = [
     { id: '1', name: 'Siti Rahayu, A.Md.Kep', city: 'Jember', exp: 5, rating: 4.9, reviews: 124, specs: ['Lansia', 'Pasca Operasi'], rate: 300000, verified: true, initials: 'SR' },
-    { id: '2', name: 'Ahmad Fauzi, S.Kep', city: 'Jember', exp: 7, rating: 4.8, reviews: 98, specs: ['Difabel', 'Terapi Okupasi'], rate: 350000, verified: true, initials: 'AF' },
+    { id: '2', name: 'Achmad Malik Fajar, S.Kep', city: 'Jember', exp: 7, rating: 4.8, reviews: 98, specs: ['Difabel', 'Terapi Okupasi'], rate: 350000, verified: true, initials: 'AF' },
     { id: '3', name: 'Dewi Kusuma, A.Md.Ft', city: 'Bondowoso', exp: 4, rating: 4.9, reviews: 76, specs: ['Fisioterapi', 'Lansia'], rate: 400000, verified: true, initials: 'DK' },
     { id: '4', name: 'Budi Santoso, S.Kep', city: 'Lumajang', exp: 6, rating: 4.7, reviews: 89, specs: ['Lansia', 'Medis'], rate: 320000, verified: true, initials: 'BS' },
     { id: '5', name: 'Nurul Hidayah, A.Md.Kep', city: 'Jember', exp: 3, rating: 4.8, reviews: 55, specs: ['Difabel', 'Lansia'], rate: 280000, verified: true, initials: 'NH' },
